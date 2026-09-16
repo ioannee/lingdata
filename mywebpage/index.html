@@ -17,7 +17,24 @@
 		<!-- Bootstrap Core CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+		<!-- ===== ДОБАВЛЕННЫЕ СТИЛИ ДЛЯ ФОТО ===== -->
+		<style>
+.photo-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
+.photo-row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+	    </style>
+		
 	</head>
 	
 <!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
@@ -86,7 +103,7 @@
 <!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
 						<p>№4 (во Льгове до 9 класса) и №547 (в Москве с 9 по 11 класс)</p>
 					</article>
-		
+		</div>
 
 				<div class="col-md-6">
 					<article>
@@ -103,19 +120,8 @@
 						➉ </p>
 					</article>
 				</div>
-					<!-- Звездочки-разделитель -->
-            <p>* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</p>
-
-            <!-- Блок с фотографиями -->
-            <div class="photo-row">
-                <img src="photo1.jpg" alt="Типография">
-                <img src="photo2.jpg" alt="Жанник">
-                <img src="photo3.jpg" alt="Дизайн">
-				<img src="photo4.jpg" alt="Рисунок">
-				<img src="photo5.jpg" alt="вайб">
-            </div>
-
-				<div class="col-md-3">
+					
+              <div class="col-md-3">
 					<h3>Я в соцсетях:</h3>
 <!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
 					<ul>
@@ -124,6 +130,25 @@
 						<li>Snapchat</li>
 					</ul>
 				</div>
+			</div>
+<!-- ===== ЗВЕЗДОЧКИ-РАЗДЕЛИТЕЛЬ (на всю ширину) ===== -->
+				<p style="text-align: center; margin: 30px 0; font-size: 18px;">
+					* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+				</p>
+
+<!-- ===== БЛОК С ФОТО (на всю ширину) ===== -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="photo-row">
+							<img src="photo1.jpg" alt="типография">
+							<img src="photo2.jpg" alt="жанник">
+							<img src="photo3.jpg" alt="дизайн">
+							<img src="photo4.jpg" alt="илюстрация">
+							<img src="photo5.jpg" alt="вайб">
+						</div>
+					</div>
+				</div>
+			
 			</div>
 		</section>
 
